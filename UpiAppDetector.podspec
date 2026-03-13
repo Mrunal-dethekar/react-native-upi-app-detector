@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.authors      = package["author"]
 
   s.platforms    = { :ios => min_ios_version_supported }
-  s.source       = { :git => "https://github.com/Mrunal-dethekar/react-native-upi-app-detector.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/Mrunal-dethekar/@webileapps/react-native-upi-app-detector.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m,mm,swift,cpp}"
   s.private_header_files = "ios/**/*.h"
