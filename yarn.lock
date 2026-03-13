@@ -3793,7 +3793,7 @@ __metadata:
     prettier: "npm:^2.8.8"
     react: "npm:19.2.0"
     react-native: "npm:0.83.2"
-    react-native-builder-bob: "npm:^0.40.13"
+    react-native-builder-bob: "npm:^0.40.18"
     release-it: "npm:^19.0.4"
     turbo: "npm:^2.5.6"
     typescript: "npm:^5.9.2"
@@ -10868,7 +10868,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-builder-bob@npm:^0.40.13":
+"react-native-builder-bob@npm:^0.40.18":
   version: 0.40.18
   resolution: "react-native-builder-bob@npm:0.40.18"
   dependencies:

@@ -5,6 +5,7 @@
   "main": "./lib/commonjs/index.js",
   "module": "./lib/module/index.js",
   "types": "./lib/typescript/module/src/index.d.ts",
+  "react-native": "./src/index.ts",
   "exports": {
     ".": {
       "import": {
@@ -40,7 +41,7 @@
   "scripts": {
     "example": "yarn workspace @webileapps/react-native-upi-app-detector-example",
     "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build lib",
-    "prepare": "bob build",
+    "prepare": "yarn run bob build",
     "typecheck": "tsc",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "test": "jest",
@@ -53,14 +54,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mrunal-dethekar/@webileapps/react-native-upi-app-detector.git"
+    "url": "git+https://github.com/Mrunal-dethekar/react-native-upi-app-detector.git"
   },
   "author": "Mrunal Dethekar <mrunaldethekar1@gmail.com> (https://github.com/Mrunal-dethekar)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Mrunal-dethekar/@webileapps/react-native-upi-app-detector/issues"
+    "url": "https://github.com/Mrunal-dethekar/react-native-upi-app-detector/issues"
   },
-  "homepage": "https://github.com/Mrunal-dethekar/@webileapps/react-native-upi-app-detector#readme",
+  "homepage": "https://github.com/Mrunal-dethekar/react-native-upi-app-detector#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -85,7 +86,7 @@
     "prettier": "^2.8.8",
     "react": "19.2.0",
     "react-native": "0.83.2",
-    "react-native-builder-bob": "^0.40.13",
+    "react-native-builder-bob": "^0.40.18",
     "release-it": "^19.0.4",
     "turbo": "^2.5.6",
     "typescript": "^5.9.2"
