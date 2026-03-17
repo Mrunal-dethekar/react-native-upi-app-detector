@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { StyleSheet, Text, View, ScrollView } from 'react-native';
-import { getUPIApps } from '@webileapps/react-native-upi-app-detector';
-import type { UPIAppResult } from '@webileapps/react-native-upi-app-detector';
+import { getUPIApps } from 'react-native-upi-app-detector';
+import type { UPIAppResult } from 'react-native-upi-app-detector';
 
 export default function App() {
   const [apps, setApps] = useState<UPIAppResult[]>([]);

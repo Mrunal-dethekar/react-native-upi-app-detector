@@ -1,8 +1,9 @@
 {
+  "extends": "expo-module-scripts/tsconfig.base",
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "@webileapps/react-native-upi-app-detector": ["./src/index"]
+      "react-native-upi-app-detector": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
