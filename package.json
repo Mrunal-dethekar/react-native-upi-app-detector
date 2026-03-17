@@ -1,6 +1,6 @@
 {
   "name": "react-native-upi-app-detector",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Detect installed UPI payment apps on Android and iOS devices",
   "main": "./lib/commonjs/index.js",
   "module": "./lib/module/index.js",
@@ -23,6 +23,7 @@
   "files": [
     "src",
     "lib",
+    "plugin",
     "app.plugin.js",
     "android",
     "ios",
@@ -41,7 +42,8 @@
   "scripts": {
     "example": "yarn workspace react-native-upi-app-detector-example expo run:android",
     "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build lib",
-    "prepare": "yarn run bob build",
+    "build:plugin": "tsc --build ./plugin/tsconfig.json",
+    "prepare": "yarn run bob build && yarn run build:plugin",
     "typecheck": "tsc",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "test": "jest",
