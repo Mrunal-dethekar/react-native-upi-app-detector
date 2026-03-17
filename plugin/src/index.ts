@@ -3,7 +3,7 @@ import {
   withInfoPlist,
   withAndroidManifest,
 } from '@expo/config-plugins';
-import UPI_APPS from './upi-apps';
+const UPI_APPS = require('../../lib/commonjs/upi-apps').default;
 
 const withIosQueries: ConfigPlugin = (config) => {
   return withInfoPlist(config, (expoConfig) => {
@@ -13,7 +13,7 @@ const withIosQueries: ConfigPlugin = (config) => {
 
     const schemes = expoConfig.modResults.LSApplicationQueriesSchemes;
 
-    UPI_APPS.forEach((app) => {
+    UPI_APPS.forEach((app: any) => {
       if (!schemes.includes(app.iosScheme)) {
         schemes.push(app.iosScheme);
       }

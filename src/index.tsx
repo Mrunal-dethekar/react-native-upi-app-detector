@@ -1,7 +1,7 @@
 import { Platform } from 'react-native';
 import UpiAppDetector from './NativeUpiAppDetector';
 import type { UPIAppResult } from './types';
-import UPI_APPS from '../plugin/src/upi-apps';
+import UPI_APPS from './upi-apps';
 
 export async function getUPIApps(): Promise<UPIAppResult[]> {
   const isAndroid = Platform.OS === 'android';
