@@ -1,11 +1,11 @@
-# @webileapps/react-native-upi-app-detector
+# react-native-upi-app-detector
 
 Detect which specific popular UPI payment apps are installed on Android and iOS devices. This library is pre-configured to detect **PhonePe, Google Pay, Paytm, BHIM, and CRED**.
 
 ## Installation
 
 ```sh
-npm install @webileapps/react-native-upi-app-detector
+npm install react-native-upi-app-detector
 ```
 
 ## Configuration
@@ -17,7 +17,7 @@ If you are using Expo, simply add the plugin to your `app.json` or `app.config.j
 ```json
 {
   "expo": {
-    "plugins": ["@webileapps/react-native-upi-app-detector"]
+    "plugins": ["react-native-upi-app-detector"]
   }
 }
 ```
@@ -44,8 +44,8 @@ No manual configuration is required. The library automatically merges the necess
 ## Usage
 
 ```tsx
-import { getUPIApps } from '@webileapps/react-native-upi-app-detector';
-import type { UPIAppResult } from '@webileapps/react-native-upi-app-detector';
+import { getUPIApps } from 'react-native-upi-app-detector';
+import type { UPIAppResult } from 'react-native-upi-app-detector';
 
 // ...
 

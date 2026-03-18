@@ -28,6 +28,14 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": ["@webileapps/react-native-upi-app-detector"]
+    "plugins": [
+      [
+        "../app.plugin.js",
+        {
+          "android": [],
+          "ios": []
+        }
+      ]
+    ]
   }
 }
